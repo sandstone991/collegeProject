@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="page__header">
+        <nav class="navbar__menu">
+            <!-- Navigation starts as empty UL that will be populated with JS -->
+            <ul id="navbar__list">
+                <a href="index.html">
+                    <li class="icon"><img src="media/icons8-home-64.png" alt="home" style="height: 50px; width: 50px;"></li>
+                </a>
+                <a href="login.html">
+                    <li class="icon"><img src="media/icons8-login.gif" alt="login" style="height: 50px; width: 50px;"></li>
+                </a>
+                <a href="marketplace.html">
+                    <li class="icon"><img src="media/icons8-market-square-50.png" alt="Market"></li>
+                </a>
+                <a href="about.html">
+                    <li class="icon"><img src="media/icons8-about-50.png" alt="about us" style="height: 50px; width: 50px;"></li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header class="main__hero">
+            <h1>Fashion Shop </h1>
+        </header>
+        <!-- Each Section has an ID (used for the anchor) and 
+        a data attribute that will populate the li node.
+        Adding more sections will automatically populate nav.
+        The first section is set to active class by default -->
+    
+        <section id="section1" data-nav="Hand Bags" class="activated">
+            <div class="landing__container">
+                <h2>HandBags</h2>
+                <div class="container-inner">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra
+                    dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex.
+                    Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec
+                    bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue.
+                    Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor
+                    lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer
+                    nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+                    <img src="media/ProductPushGif_65857418YSG1060-65857418YSG9878-65857418YSG9068-grey_001_Default.gif" alt="HandBags" class="img-fl">
+            </div>
+            <button class="button-shop">Buy Now</button>
+        </div>
+        </section>
+        <button class="button-top-page">Scroll to Top</button>
+        <section id="section2" data-nav="Shoes">
+            <div class="landing__container">
+                <h2>Shoes</h2>
+                <div class="container-inner">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra
+                    dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex.
+                    Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec
+                    bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue.
+                    Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor
+                    lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer
+                    nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+                   <img src="media/ProductPush_6555790G0P01060_001_Light.png" alt="Shoes" class="img-fl">
+                    </div>
+                    <button class="button-shop">Buy Now</button>
+            </div>
+        </section>
+        <section id="section3" data-nav="Watches">
+            <div class="landing__container">
+                <h2>Watches</h2>
+                <div class="container-inner">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra
+                        dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex.
+                        Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec
+                        bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue.
+                        Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor
+                        lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer
+                        nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+                    <img src="media/CategorySingle_652728I86008740_001_Light.jpg" alt="Golden Watch" class="img-fl">
+                </div>
+                <button class="button-shop">Buy Now</button>
+            </div>
+        </section>
+        <section id="section4" data-nav="Jewelry">
+            <div class="landing__container">
+                <h2>Jewelry</h2>
+                <div class="container-inner">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra
+                        dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex.
+                        Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec
+                        bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue.
+                        Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor
+                        lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer
+                        nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+                    <img src="media\CategorySingle_664352I46208078_001_Light.jpg" alt="Jewelry" class="img-fl">
+                </div>
+                <button class="button-shop">Buy Now</button>
+            </div>
+        </section>
+       
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

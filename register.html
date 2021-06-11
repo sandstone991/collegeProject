@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="page__header">
+        <nav class="navbar__menu">
+            <!-- Navigation starts as empty UL that will be populated with JS -->
+            <ul id="navbar__list">
+            <a href="index.html">
+                <li class="icon"><img src="media/icons8-home-64.png" alt="home" style="height: 50px; width: 50px;"></li>
+            </a>
+            <a href="login.html">
+                <li class="icon"><img src="media/icons8-login.gif" alt="login" style="height: 50px; width: 50px;"></li>
+            </a>
+            <a href="marketplace.html">
+                <li class="icon"><img src="media/icons8-market-square-50.png" alt="Market"></li>
+            </a>
+            <a href="about.html">
+                <li class="icon"><img src="media/icons8-about-50.png" alt="about us" style="height: 50px; width: 50px;"></li>
+            </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header class="main__hero">
+            <h1 style="text-align: center;">Register</h1>
+        </header>
+        <section id="section1" data-nav="Register" class="activated">
+            <div class="register-div">
+                <form action="register.html" id="register_form">
+                    <table class="register-table">
+                        <tr>
+                            <td><label for="firstname" class="label-login">First name:</label></td>
+                            <td><input type="text" id="firstname" name="firstname" placeholder="First Name" class="input-text" required></td>
+                            <td>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+                            <td><label for="lastname" class="label-login">Last name:</label></td>
+                            <td><input type="text" id="lastname" name="lastname" placeholder="Last Name" class="input-text" required ></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email" class="label-login">Email:</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="Email" class="input-text" required ></td>
+                            <td>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</td>   
+                            <td><label for="phneNumber" class="label-login">Phone Number:</label></td>
+                            <td><input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="input-text" required maxlength="11" size="11"></td>
+                            </tr>
+                            <tr>
+                                <td><br></td>
+                            </tr>
+                            <tr>
+                                <td><br></td>
+                            </tr>
+                            <td><label for="address" class="label-login">Address:</label></td>
+                            <td><input type="text" id="address" name="address" placeholder="Address" class="input-text" required></td>
+                            <td>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+                            <td><label for="registerPassword" class="label-login">Password:</label></td>
+                            <td><input type="password" id="registerPassword" name="registerPassword" placeholder="Password" class="input-text" required ></td>
+
+                    </table>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male" style="color: black;">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" style="color: black;">Female</label><br>
+                    <br>
+                            <div  class="password-note invisible">Password must<ul>
+                                    <li>start with uppercase character.</li>
+                                    <li>include 8 characters no more no less.</li>
+                                    <li>include at least one digit.</li>
+                                    <li>include one special character like -, _, #,
+                                        &, and *.</li>
+                                    <li>not include whitespaces</li>
+                                </ul>
+                            </div>
+                    <p style="color: black;">You already have an account?&ensp;<a href="login.html" style="color:blue;">login now!</a></p>
+                    <br>
+                    <input type="submit" value="Create Account" class="submit-btn" id="register-button">
+                </form>
+            </div>
+        </section>
+
+        <button class="button-top-page">Scroll to Top</button>
+
+
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
