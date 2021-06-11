@@ -139,7 +139,7 @@ function isLowerCase(str)
 
 function Validate(){
 const registerPassword = document.getElementById('registerPassword').value;
-
+const phoneNumber = document.getElementById('phoneNumber').value;
 if(!isLetter(registerPassword.charAt(0))){
     alert("First character of password must be a letter");
     return false;
@@ -162,6 +162,10 @@ if(hasWhiteSpace(registerPassword)){
 }
 if(registerPassword.length!=8){
     alert("Password must exactly be 8 characters");
+    return false;
+}
+ if(phoneNumber.length!=11){
+    alert("Phone Number must exactly be 11 digits");
     return false;
 }
 alert("You've registered succesfully");
