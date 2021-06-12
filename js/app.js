@@ -100,6 +100,8 @@ btn.onclick=function(){
 
 
 
+
+
 function containsSymbol(str){
 const format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 if(format.test(str)){
@@ -134,10 +136,15 @@ function isLowerCase(str)
 {
     return str == str.toLowerCase() && str != str.toUpperCase();
 }
+function containsLetter(str){
+    var regExp = /[a-zA-Z]/g;
+    if(regExp.test(str)){return true;}
+    else{return false}
+}
 
+document.getElementById("register_form").addEventListener("submit", function (e){
+    e.preventDefault();
 
-
-function Validate(){
 const registerPassword = document.getElementById('registerPassword').value;
 const phoneNumber = document.getElementById('phoneNumber').value;
 if(!isLetter(registerPassword.charAt(0))){
@@ -164,15 +171,26 @@ if(registerPassword.length!=8){
     alert("Password must exactly be 8 characters");
     return false;
 }
- if(phoneNumber.length!=11){
+if(phoneNumber.length!=11){
     alert("Phone Number must exactly be 11 digits");
     return false;
+}
+if(containsLetter(phoneNumber)){
+    alert("Phone Number must be digits only");
+    return false;
+}
+if(containsSymbol(phoneNumber)){
+     alert("Phone Number must be digits only");
+    return false;  
+}
+if(hasWhiteSpace(phoneNumber)){
+      alert("Phone Number must be digits only");
+    return false; 
 }
 alert("You've registered succesfully");
 return true;
 }
-
-document.getElementById("register_form").addEventListener("submit", Validate);
+);
 
 
 const passWord= document.querySelector('#registerPassword');
