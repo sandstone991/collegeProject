@@ -293,10 +293,12 @@ section.activated {
   .grid-container {
     grid-template-columns: 45% 45%;
   }
+  .register-table td{display:block;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 900px) {
+  .register-table td{display:block;}
   .container-inner {
     flex-direction: column-reverse;
     justify-content: space-between;
