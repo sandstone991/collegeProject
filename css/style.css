@@ -284,17 +284,29 @@ section.activated {
   width: 100%;
 }
 
-.about-table th{
+.about-table th {
   text-align: left;
   padding: 8px;
+  border-width: 2px;
+  border-color: #000;
 }
-.about-table td{  text-align: left;
-  padding: 8px;} 
+.about-table td {
+  text-align: left;
+  border-width: 2px;
+  border-color: #000;
+  padding: 8px;
+}
 
-.about-table tr:nth-child(even){background-color: #f2f2f2}
+.about-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+  color: #000;
+}
+.about-table tr:nth-child(odd) {
+  background-color: #858080;
+}
 
 .about-table th {
-background-color: rgb(133,198,168);
+  background-color: rgb(133, 198, 168);
   color: black;
 }
 /* Responsive */
@@ -312,26 +324,34 @@ background-color: rgb(133,198,168);
   .grid-container {
     grid-template-columns: 45% 45%;
   }
-  .register-table td{display:block;}
-    .about-table th{
-display:block;
-}
-  .about-table td{ display:block;}
+  .register-table td {
+    display: block;
+  }
+  .about-table th {
+    display: block;
+  }
+  .about-table td {
+    display: block;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 900px) {
-  .register-table td{display:block;}
+  .register-table td {
+    display: block;
+  }
   .container-inner {
     flex-direction: column-reverse;
     justify-content: space-between;
     width: 100%;
     height: auto;
   }
-  .about-table th{
-display:block;
-}
-  .about-table td{ display:block;}
+  .about-table th {
+    display: block;
+  }
+  .about-table td {
+    display: block;
+  }
   .grid-container {
     grid-template-columns: 45% 45%;
   }
@@ -361,3 +381,4 @@ display:block;
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 }
+
